@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Campeonato Manual</title>
+  <link rel="stylesheet" href="style/home.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Risco League</h1>
+
+    <form id="formResultados">
+      <div class="jogo">
+        <label>Facção vs Racionais</label>
+        <input type="number" min="0" id="A_B_1" required> x 
+        <input type="number" min="0" id="A_B_2" required>
+      </div>
+      <div class="jogo">
+        <label>Facção vs Sabotage</label>
+        <input type="number" min="0" id="A_C_1" required> x 
+        <input type="number" min="0" id="A_C_2" required>
+      </div>
+      <div class="jogo">
+        <label>Facção vs Planet hemp</label>
+        <input type="number" min="0" id="A_D_1" required> x 
+        <input type="number" min="0" id="A_D_2" required>
+      </div>
+      <div class="jogo">
+        <label>Racionais vs Sabotage</label>
+        <input type="number" min="0" id="B_C_1" required> x 
+        <input type="number" min="0" id="B_C_2" required>
+      </div>
+      <div class="jogo">
+        <label>Racionais vs Planet hemp</label>
+        <input type="number" min="0" id="B_D_1" required> x 
+        <input type="number" min="0" id="B_D_2" required>
+      </div>
+      <div class="jogo">
+        <label>Sabotage vs Planet hemp</label>
+        <input type="number" min="0" id="C_D_1" required> x 
+        <input type="number" min="0" id="C_D_2" required>
+      </div>
+    </form>
+
+    <h2>Tabela de Classificação</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th><th>J</th><th>V</th><th>E</th><th>D</th>
+          <th>GP</th><th>GC</th><th>SG</th><th>Pts</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
